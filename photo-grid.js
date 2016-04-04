@@ -138,7 +138,9 @@ var displayPhotos = function (data) {
 
 var search = function () {
   var searchText = searchInput.value;
-  getPhotos(searchText);
+  if (searchText.length > 0) {
+    getPhotos(searchText);
+  }
 };
 
 var getPhotos = function (searchTerm) {
