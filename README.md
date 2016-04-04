@@ -5,6 +5,8 @@ When a thumbnail is clicked, the photo is displayed in a lightbox container. You
 You can close the lightbox with the close button, "X", and also with the `esc` key.
 You can enter a search term in the search field to update the photo grid with corresponding photos.
 
+Please note that you need to use your own Flickr API key in order for the requests to work. You can update the variable `flickrKey` in the file `phot-grid.js` to add your own.
+
 Code was written only in native JavaScript.
 
 You can check out the project live here:
