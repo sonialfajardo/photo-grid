@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photo Grid</title>
+		<meta name="description" content="Photo grid - JS practice"/>
+        <meta name="author" content="Sonia Fajardo"/>
+		<link rel="stylesheet" type="text/css" href="photo-grid.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<noscript>
+            <p>*** You need to have JavaScript enabled in your browser in order to see the Photo Grid. ***</p>
+        </noscript>
+		<div class="title-section">
+			<h1 class="title">Photo Grid</h1>
+		</div>
+		<div class="subtitle-section">
+			<div class="search-section">
+				<span class="medium-text">Enter a term to search for photos!</span>
+				<br/>
+				<input type="text" id="searchInput" />
+				<input type="button" onclick="search()" value="Search" />
+			</div>
+			<span class="thumbnail-instructions small-text" id="thumbnailInstructions">Click on a photo to see it larger</span>
+			<br/>
+		</div>
+		<ul id="thumbnails">
+		</ul>
+		<div class="api-error medium-text" id="apiError">
+			There was an error with the photos API, please try again
+		</div>
+		<div class="no-photos medium-text" id="noPhotos">
+			Photos were not found based on your search term
+		</div>
+		<div class="lightbox small-text" id="lightboxContainer">
+			<img class="close" id="close" src="close-icon.png"/>
+			<h2 class="large photo-title" id="photoTitle"></h2>
+			<br/>
+			<div class="photo-contents">
+				<img class="arrow left" name="left" src="left-arrow.png" id="leftArrow"/>
+				<img src="" class="photo" id="photoImage"/>
+				<img class="arrow right" name="right" src="right-arrow.png" id="rightArrow"/>
+			</div>	
+		</div>
+		<script src="photo-grid.js"></script>
+	</body>
+</html>
